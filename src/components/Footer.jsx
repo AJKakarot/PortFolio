@@ -15,14 +15,14 @@ function Footer() {
             <div className="flex space-x-4">
               <FaFacebook size={24} />
               <FaTwitter size={24} />
-              <FaInstagram size={24} />
-              <FaLinkedinIn size={24} />
+             <a href= "https://www.instagram.com/a_jee_t4?igsh=bGZvNmRzOWs3d2R5&utm_source=qr"> <FaInstagram size={24} /></a>
+            <a href="https://www.linkedin.com/in/ajeet-gupta-99aa6b281/">  <FaLinkedinIn size={24} /> </a>
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">
               <p className="text-sm">
-                &copy; 2024 Your Company. All rights reserved.
+                &copy; 2025 Your Company. All rights reserved.
               </p>
-              <p className="text-sm">Supportive Partner ❤️ Ankush</p>
+              <p className="text-sm">Supportive Partner ❤️ Ajeet</p>
             </div>
           </div>
         </div>

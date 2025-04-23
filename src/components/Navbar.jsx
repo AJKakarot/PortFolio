@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import pic from "../../public/photo.avif";
+import pic from "../../public/photo.jpg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
+
 function Navbar() {
   const [menu, setMenu] = useState(false);
   const navItems = [
@@ -20,25 +21,26 @@ function Navbar() {
     },
     {
       id: 4,
-      text: "Experiance",
+      text: "Experience",
     },
     {
       id: 5,
       text: "Contact",
     },
   ];
+
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-[#4b79a1]">
         <div className="flex justify-between items-center h-16">
-          <div className=" flex space-x-2">
-            <img src={pic} className="h-12 w-12 rounded-full" alt="" />
-            <h1 className="font-semibold text-xl cursor-pointer">
-              Akhi<span className="text-green-500 text-2xl">l</span>
-              <p className="text-sm">Web Developer</p>
+          <div className="flex space-x-2">
+            <img src={pic} className="h-16 w-16 rounded-full" alt="logo" />
+            <h1 className="font-semibold text-xl cursor-pointer text-white">
+              Ajee<span className=" text-blue-300 text-2xl">t</span>
+              <p className="text-sm text-white">Web Developer</p>
             </h1>
           </div>
-          {/* desktop navbar */}
+          {/* Desktop Navbar */}
           <div>
             <ul className="hidden md:flex space-x-8">
               {navItems.map(({ id, text }) => (
@@ -52,6 +54,7 @@ function Navbar() {
                     duration={500}
                     offset={-70}
                     activeClass="active"
+                    className="text-white hover:text-[#283e51]"
                   >
                     {text}
                   </Link>
@@ -59,14 +62,14 @@ function Navbar() {
               ))}
             </ul>
             <div onClick={() => setMenu(!menu)} className="md:hidden">
-              {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
+              {menu ? <IoCloseSharp size={24} color="white" /> : <AiOutlineMenu size={24} color="white" />}
             </div>
           </div>
         </div>
-        {/* mobile navbar */}
+        {/* Mobile Navbar */}
         {menu && (
-          <div className="bg-white">
-            <ul className="md:hidden flex flex-col h-screen items-center justify-center space-y-3 text-xl">
+          <div className="bg-[#4b79a1]">
+            <ul className="md:hidden flex flex-col h-screen items-center justify-center space-y-3 text-xl text-white">
               {navItems.map(({ id, text }) => (
                 <li
                   className="hover:scale-105 duration-200 font-semibold cursor-pointer"
@@ -79,6 +82,7 @@ function Navbar() {
                     duration={500}
                     offset={-70}
                     activeClass="active"
+                    className="text-white hover:text-[#283e51]"
                   >
                     {text}
                   </Link>

@@ -1,8 +1,8 @@
 import React from "react";
 
-import pic from "../../public/photo.avif";
+import pic from "../../public/photo.jpg";
 
-import { FaSquareFacebook } from "react-icons/fa6";
+import { FaMedium } from "react-icons/fa";;
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaTelegram } from "react-icons/fa6";
@@ -29,19 +29,19 @@ function Home() {
               {/* <span >Developer</span> */}
               <ReactTyped
                 className="text-red-700 font-bold"
-                strings={["Developer", "Programmer", "Coder"]}
-                typeSpeed={40}
-                backSpeed={50}
+                strings={["web Developer","App Developer" ,"Problem Solver", "Tech Enthusiast"]}
+                typeSpeed={35}
+                backSpeed={45}
                 loop={true}
               />
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quisquam, recusandae consequatur. Accusamus sint libero eligendi
-              laborum fuga repudiandae? Asperiores tempore eos animi dolores
-              corrupti! Sint quos, mollitia architecto aliquam nesciunt, optio
-              cum delectus sit voluptatum aut ratione quaerat veniam aperiam!
+            Hi, I'm a passionate MERN Stack Developer, with expertise in both frontend and backend development.
+             I specialize in creating dynamic, responsive web applications, 
+             and I am currently seeking exciting opportunities to contribute and grow.
+              Let's build something amazing together!
+
             </p>
             <br />
             {/* social media icons */}
@@ -50,12 +50,12 @@ function Home() {
                 <h1 className="font-bold text-center ">Available on</h1>
                 <ul className="flex space-x-5">
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
-                      <FaSquareFacebook className="text-2xl cursor-pointer" />
+                    <a href="https://medium.com/@2301661530002" target="_blank">
+                      <FaMedium  className="text-2xl cursor-pointer" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/in/ajeet-gupta-99aa6b281/" target="_blank">
                       <FaLinkedin className="text-2xl cursor-pointer" />
                     </a>
                   </li>
@@ -82,14 +82,16 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 md:ml-48 md:mt-20 mt-8 order-1">
-            <img
-              src={pic}
-              className="rounded-full md:w-[450px] md:h-[450px]"
-              alt=""
-            />
-          </div>
-        </div>
+          <div className="md:w-1/2 md:ml-16 mt-4 md:mt-4 mb-10 md:mb-4 order-1 flex justify-center items-start md:items-center">
+  <div className="rounded-full bg-white p-4 shadow-lg md:w-[500px] md:h-[540px] w-64 h-72 flex items-center justify-center overflow-hidden">
+    <img
+      src={pic}
+      className="rounded-full w-[95%] h-[95%] object-cover"
+      alt="Profile"
+    />
+  </div>
+</div>
+ </div>
       </div>
 
       <hr />
